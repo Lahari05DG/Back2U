@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Item</title>
+</head>
+<body>
+
+<h2>Upload Found Item</h2>
+
+<form action="upload_item.php" method="POST" enctype="multipart/form-data">
+
+    <label>Item Image:</label><br>
+    <input type="file" name="item_image" required><br><br>
+
+    <label>Category:</label><br>
+    <select name="category" required>
+        <option value="">Select category</option>
+        <option value="ID Card">ID Card</option>
+        <option value="Mobile">Mobile</option>
+        <option value="Bag">Bag</option>
+        <option value="Bottle">Bottle</option>
+        <option value="Keys">Keys</option>
+        <option value="Books">Books</option>
+        <option value="Others">Others</option>
+    </select><br><br>
+
+    <label>Description:</label><br>
+    <textarea name="description" required></textarea><br><br>
+
+    <label>Found Location:</label><br>
+    <input type="text" name="location" required><br><br>
+
+    <button type="submit">Upload Item</button>
+
+</form>
+
+<br>
+<a href="dashboard.php">Back to Dashboard</a>
+
+</body>
+</html>
