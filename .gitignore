@@ -1,0 +1,15 @@
+# Uploads (user content)
+uploads/*
+!uploads/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# XAMPP
+.htaccess
